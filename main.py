@@ -19,11 +19,11 @@ def main():
 
     # open friends.txt
     f = open('friends.txt', 'r')
-    # iterate lines
+    # iterate lines (or in your case, loop through photos in dir)
     for line in f:
-        # call first algorithm on line
+        # call first algorithm on line/photo
         first_algo.first_algorithm(line.strip())
-        # call second algorithm on line
+        # call second algorithm on line/photo
         second_algorithm(line.strip())
     
 if __name__ == "__main__":
