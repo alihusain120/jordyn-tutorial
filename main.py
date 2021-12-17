@@ -15,6 +15,8 @@ import first_algo
 # 2. import just what you need
 from second_algo import second_algorithm
 
+import detecto
+
 def main():
 
     # open friends.txt
@@ -25,6 +27,18 @@ def main():
         first_algo.first_algorithm(line.strip())
         # call second algorithm on line/photo
         second_algorithm(line.strip())
-    
+
+
+def main2():
+	print("Starting my ML process!")
+	
+	detecto.some_function("parameter")
+	detecto.process_result(20)
+	x = detecto.get_values()
+	print(f"get_values() returned the value {x}")
+
+	print("Finished my ML process!")
+
+
 if __name__ == "__main__":
-    main()
+    main2()
